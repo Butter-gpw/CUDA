@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="GEMM"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/guopeiwen/code/cppProjects/CUDA/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j80 -f &quot;/home/guopeiwen/code/cppProjects/CUDA/build/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/gmake -j80 -f &quot;/home/guopeiwen/code/cppProjects/CUDA/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j80 -f &quot;/home/guopeiwen/code/cppProjects/CUDA/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j80 -f &quot;/home/guopeiwen/code/cppProjects/CUDA/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gemm">
+				<Option output="/home/guopeiwen/code/cppProjects/CUDA/build/gemm" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/guopeiwen/code/cppProjects/CUDA/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/guopeiwen/code/cppProjects/CUDA/include"/>
+					<Add directory="/usr/local/cuda-12.4/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j80 -f &quot;/home/guopeiwen/code/cppProjects/CUDA/build/Makefile&quot;  VERBOSE=1 gemm"/>
+					<CompileFile command="/usr/bin/gmake -j80 -f &quot;/home/guopeiwen/code/cppProjects/CUDA/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j80 -f &quot;/home/guopeiwen/code/cppProjects/CUDA/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j80 -f &quot;/home/guopeiwen/code/cppProjects/CUDA/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="gemm/fast">
+				<Option output="/home/guopeiwen/code/cppProjects/CUDA/build/gemm" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/guopeiwen/code/cppProjects/CUDA/build"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/guopeiwen/code/cppProjects/CUDA/include"/>
+					<Add directory="/usr/local/cuda-12.4/include"/>
+					<Add directory="/usr/include/c++/11"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/11"/>
+					<Add directory="/usr/include/c++/11/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/11/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j80 -f &quot;/home/guopeiwen/code/cppProjects/CUDA/build/Makefile&quot;  VERBOSE=1 gemm/fast"/>
+					<CompileFile command="/usr/bin/gmake -j80 -f &quot;/home/guopeiwen/code/cppProjects/CUDA/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j80 -f &quot;/home/guopeiwen/code/cppProjects/CUDA/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j80 -f &quot;/home/guopeiwen/code/cppProjects/CUDA/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/guopeiwen/code/cppProjects/CUDA/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j80 -f &quot;/home/guopeiwen/code/cppProjects/CUDA/build/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/gmake -j80 -f &quot;/home/guopeiwen/code/cppProjects/CUDA/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j80 -f &quot;/home/guopeiwen/code/cppProjects/CUDA/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j80 -f &quot;/home/guopeiwen/code/cppProjects/CUDA/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/guopeiwen/code/cppProjects/CUDA/build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/gmake -j80 -f &quot;/home/guopeiwen/code/cppProjects/CUDA/build/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/gmake -j80 -f &quot;/home/guopeiwen/code/cppProjects/CUDA/build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/gmake -j80 -f &quot;/home/guopeiwen/code/cppProjects/CUDA/build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/gmake -j80 -f &quot;/home/guopeiwen/code/cppProjects/CUDA/build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/guopeiwen/code/cppProjects/CUDA/main.cu">
+			<Option target="gemm"/>
+		</Unit>
+		<Unit filename="/home/guopeiwen/code/cppProjects/CUDA/src/elementwise.cu">
+			<Option target="gemm"/>
+		</Unit>
+		<Unit filename="/home/guopeiwen/code/cppProjects/CUDA/src/gemm.cu">
+			<Option target="gemm"/>
+		</Unit>
+		<Unit filename="/home/guopeiwen/code/cppProjects/CUDA/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
