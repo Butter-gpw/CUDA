@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "gemm::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-gemm-Debug-6288508009c2a2d4391d.json",
-					"name" : "gemm",
+					"id" : "cuda_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-cuda_test-Debug-fd633db40316f2deb600.json",
+					"name" : "cuda_test",
 					"projectIndex" : 0
 				}
 			]

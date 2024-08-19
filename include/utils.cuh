@@ -1,4 +1,5 @@
 #pragma once
+#include <cmath>
 #include <cstdio>
 #include <cstdlib>
 #include <sys/time.h>
@@ -50,7 +51,7 @@ float compare(float *hostC, float *serialC, int M, int N)
     float error = 0;
     for (int i = 0; i < M * N; i++)
     {
-        error = fmax(error, fabs(hostC[i] - serialC[i]));
+        error = fmax(error, std::fabs(hostC[i] - serialC[i]));
     }
     return error;
 }

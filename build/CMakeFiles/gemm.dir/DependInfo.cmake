@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/guopeiwen/code/cppProjects/CUDA/main.cu" "CMakeFiles/gemm.dir/main.cu.o" "gcc" "CMakeFiles/gemm.dir/main.cu.o.d"
   "/home/guopeiwen/code/cppProjects/CUDA/src/elementwise.cu" "CMakeFiles/gemm.dir/src/elementwise.cu.o" "gcc" "CMakeFiles/gemm.dir/src/elementwise.cu.o.d"
   "/home/guopeiwen/code/cppProjects/CUDA/src/gemm.cu" "CMakeFiles/gemm.dir/src/gemm.cu.o" "gcc" "CMakeFiles/gemm.dir/src/gemm.cu.o.d"
+  "/home/guopeiwen/code/cppProjects/CUDA/src/reduce.cu" "CMakeFiles/gemm.dir/src/reduce.cu.o" "gcc" "CMakeFiles/gemm.dir/src/reduce.cu.o.d"
   )
 
 # Targets to which this target links.

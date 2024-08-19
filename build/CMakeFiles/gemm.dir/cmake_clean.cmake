@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/gemm.dir/src/elementwise.cu.o.d"
   "CMakeFiles/gemm.dir/src/gemm.cu.o"
   "CMakeFiles/gemm.dir/src/gemm.cu.o.d"
+  "CMakeFiles/gemm.dir/src/reduce.cu.o"
+  "CMakeFiles/gemm.dir/src/reduce.cu.o.d"
   "gemm"
   "gemm.pdb"
 )

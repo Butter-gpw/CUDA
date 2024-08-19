@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named gemm
+# Target rules for targets named cuda_test
 
 # Build rule for target.
-gemm: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gemm
-.PHONY : gemm
+cuda_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cuda_test
+.PHONY : cuda_test
 
 # fast build rule for target.
-gemm/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemm.dir/build.make CMakeFiles/gemm.dir/build
-.PHONY : gemm/fast
+cuda_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_test.dir/build.make CMakeFiles/cuda_test.dir/build
+.PHONY : cuda_test/fast
 
 main.o: main.cu.o
 .PHONY : main.o
 
 # target to build an object file
 main.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemm.dir/build.make CMakeFiles/gemm.dir/main.cu.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_test.dir/build.make CMakeFiles/cuda_test.dir/main.cu.o
 .PHONY : main.cu.o
 
 main.i: main.cu.i
@@ -142,7 +142,7 @@ main.i: main.cu.i
 
 # target to preprocess a source file
 main.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemm.dir/build.make CMakeFiles/gemm.dir/main.cu.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_test.dir/build.make CMakeFiles/cuda_test.dir/main.cu.i
 .PHONY : main.cu.i
 
 main.s: main.cu.s
@@ -150,7 +150,7 @@ main.s: main.cu.s
 
 # target to generate assembly for a file
 main.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemm.dir/build.make CMakeFiles/gemm.dir/main.cu.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_test.dir/build.make CMakeFiles/cuda_test.dir/main.cu.s
 .PHONY : main.cu.s
 
 src/elementwise.o: src/elementwise.cu.o
@@ -158,7 +158,7 @@ src/elementwise.o: src/elementwise.cu.o
 
 # target to build an object file
 src/elementwise.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemm.dir/build.make CMakeFiles/gemm.dir/src/elementwise.cu.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_test.dir/build.make CMakeFiles/cuda_test.dir/src/elementwise.cu.o
 .PHONY : src/elementwise.cu.o
 
 src/elementwise.i: src/elementwise.cu.i
@@ -166,7 +166,7 @@ src/elementwise.i: src/elementwise.cu.i
 
 # target to preprocess a source file
 src/elementwise.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemm.dir/build.make CMakeFiles/gemm.dir/src/elementwise.cu.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_test.dir/build.make CMakeFiles/cuda_test.dir/src/elementwise.cu.i
 .PHONY : src/elementwise.cu.i
 
 src/elementwise.s: src/elementwise.cu.s
@@ -174,7 +174,7 @@ src/elementwise.s: src/elementwise.cu.s
 
 # target to generate assembly for a file
 src/elementwise.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemm.dir/build.make CMakeFiles/gemm.dir/src/elementwise.cu.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_test.dir/build.make CMakeFiles/cuda_test.dir/src/elementwise.cu.s
 .PHONY : src/elementwise.cu.s
 
 src/gemm.o: src/gemm.cu.o
@@ -182,7 +182,7 @@ src/gemm.o: src/gemm.cu.o
 
 # target to build an object file
 src/gemm.cu.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemm.dir/build.make CMakeFiles/gemm.dir/src/gemm.cu.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_test.dir/build.make CMakeFiles/cuda_test.dir/src/gemm.cu.o
 .PHONY : src/gemm.cu.o
 
 src/gemm.i: src/gemm.cu.i
@@ -190,7 +190,7 @@ src/gemm.i: src/gemm.cu.i
 
 # target to preprocess a source file
 src/gemm.cu.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemm.dir/build.make CMakeFiles/gemm.dir/src/gemm.cu.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_test.dir/build.make CMakeFiles/cuda_test.dir/src/gemm.cu.i
 .PHONY : src/gemm.cu.i
 
 src/gemm.s: src/gemm.cu.s
@@ -198,8 +198,32 @@ src/gemm.s: src/gemm.cu.s
 
 # target to generate assembly for a file
 src/gemm.cu.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gemm.dir/build.make CMakeFiles/gemm.dir/src/gemm.cu.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_test.dir/build.make CMakeFiles/cuda_test.dir/src/gemm.cu.s
 .PHONY : src/gemm.cu.s
+
+src/reduce.o: src/reduce.cu.o
+.PHONY : src/reduce.o
+
+# target to build an object file
+src/reduce.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_test.dir/build.make CMakeFiles/cuda_test.dir/src/reduce.cu.o
+.PHONY : src/reduce.cu.o
+
+src/reduce.i: src/reduce.cu.i
+.PHONY : src/reduce.i
+
+# target to preprocess a source file
+src/reduce.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_test.dir/build.make CMakeFiles/cuda_test.dir/src/reduce.cu.i
+.PHONY : src/reduce.cu.i
+
+src/reduce.s: src/reduce.cu.s
+.PHONY : src/reduce.s
+
+# target to generate assembly for a file
+src/reduce.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_test.dir/build.make CMakeFiles/cuda_test.dir/src/reduce.cu.s
+.PHONY : src/reduce.cu.s
 
 # Help Target
 help:
@@ -209,7 +233,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... gemm"
+	@echo "... cuda_test"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -219,6 +243,9 @@ help:
 	@echo "... src/gemm.o"
 	@echo "... src/gemm.i"
 	@echo "... src/gemm.s"
+	@echo "... src/reduce.o"
+	@echo "... src/reduce.i"
+	@echo "... src/reduce.s"
 .PHONY : help
 
 

@@ -1,4 +1,4 @@
-CMakeFiles/gemm.dir/main.cu.o : /home/guopeiwen/code/cppProjects/CUDA/main.cu \
+CMakeFiles/cuda_test.dir/src/reduce.cu.o : /home/guopeiwen/code/cppProjects/CUDA/src/reduce.cu \
     /usr/include/stdc-predef.h \
     /usr/local/cuda-12.4/include/cuda_runtime.h \
     /usr/local/cuda-12.4/include/crt/host_config.h \
@@ -153,8 +153,6 @@ CMakeFiles/gemm.dir/main.cu.o : /home/guopeiwen/code/cppProjects/CUDA/main.cu \
     /usr/include/c++/11/bits/move.h \
     /usr/include/c++/11/type_traits \
     /usr/include/c++/11/initializer_list \
-    /usr/include/c++/11/cstdio \
-    /usr/include/x86_64-linux-gnu/sys/time.h \
-    /home/guopeiwen/code/cppProjects/CUDA/include/gemm.cuh \
-    /home/guopeiwen/code/cppProjects/CUDA/include/utils.cuh \
-    /home/guopeiwen/code/cppProjects/CUDA/include/reduce.cuh
+    /home/guopeiwen/code/cppProjects/CUDA/include/reduce.cuh \
+    /usr/include/c++/11/cfloat \
+    /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h

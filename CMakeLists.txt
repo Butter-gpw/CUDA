@@ -20,6 +20,6 @@ cuda_include_directories(include)
 
 aux_source_directory(./src SRC_FILES)
 
-add_executable(gemm main.cu ${SRC_FILES})
-target_include_directories(gemm PRIVATE ${CUDA_INCLUDE_DIRS})
-target_link_libraries(gemm PRIVATE ${CUDA_LIBRARIES})
+add_executable(cuda_test main.cu ${SRC_FILES})
+target_include_directories(cuda_test PRIVATE ${CUDA_INCLUDE_DIRS})
+target_link_libraries(cuda_test PRIVATE ${CUDA_LIBRARIES})
