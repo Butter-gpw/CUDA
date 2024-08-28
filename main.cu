@@ -4,20 +4,10 @@
 #include "gemm.cuh"
 #include "utils.cuh"
 #include "reduce.cuh"
+#include "sgemv.cuh"
+#include "dot_product.cuh"
 #define FLOAT4(value) (reinterpret_cast<float4*>(&(value))[0])
 
-
-__global__ void warp_reduce_sum_test(float* output, float *input, int n){
-    int idx = threadIdx.x + blockIdx.x * blockDim.x;
-    if(idx < n){
-        float val = input[idx];
-        val = warp_reduce_sum(val);
-        if(threadIdx.x % WARP_SIZE==0){
-            output[idx / WARP_SIZE]=val;
-            printf("warpID:%d, %f\n", blockIdx.x, val);
-        }
-    }
-}
 
 int main(void){
     setGPU(1);
