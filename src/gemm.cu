@@ -39,8 +39,8 @@ __global__ void sgemm_block(float *a, float *b, float *c, int M, int N, int K){
     __shared__ float sliceA[BLOCK_SIZE][BLOCK_SIZE], sliceB[BLOCK_SIZE][BLOCK_SIZE]; //申请共享内存
 
     float sum =0.f;
-    int nIter = (K + BLOCK_SIZE -1) / BLOCK_SIZE; //计算每个block的边界 这样可以防止K不能被BLOCK_SIZE整除而丢失一个block
-    for(int bk = 0;bk < nIter; ++bk){
+    int nbk = (K + BLOCK_SIZE -1) / BLOCK_SIZE; //计算每个block的边界 这样可以防止K不能被BLOCK_SIZE整除而丢失一个block
+    for(int bk = 0;bk < nbk; ++bk){
         sliceA[threadIdx.y][threadIdx.x] = a[nRow*K + bk * BLOCK_SIZE + threadIdx.x];
         sliceB[threadIdx.y][threadIdx.x] = b[(bk*BLOCK_SIZE + threadIdx.y)*N + nCol];
 
