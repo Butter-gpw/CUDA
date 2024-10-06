@@ -140,8 +140,25 @@ cuda_test: CMakeFiles/cuda_test.dir/src/elementwise.cu.o
 cuda_test: CMakeFiles/cuda_test.dir/src/gemm.cu.o
 cuda_test: CMakeFiles/cuda_test.dir/src/reduce.cu.o
 cuda_test: CMakeFiles/cuda_test.dir/build.make
-cuda_test: /usr/local/cuda-12.4/lib64/libcudart_static.a
-cuda_test: /usr/lib/x86_64-linux-gnu/librt.a
+cuda_test: /usr/local/cuda-12.4/lib64/libcudart.so
+cuda_test: /home/guopeiwen/libtorch/lib/libtorch.so
+cuda_test: /home/guopeiwen/libtorch/lib/libc10.so
+cuda_test: /home/guopeiwen/libtorch/lib/libkineto.a
+cuda_test: /usr/lib/x86_64-linux-gnu/libcuda.so
+cuda_test: /usr/local/cuda-12.4/lib64/libnvrtc.so
+cuda_test: /usr/local/cuda-12.4/lib64/libnvToolsExt.so
+cuda_test: /usr/local/cuda-12.4/lib64/libcudart.so
+cuda_test: /home/guopeiwen/libtorch/lib/libc10_cuda.so
+cuda_test: /home/guopeiwen/libtorch/lib/libc10.so
+cuda_test: /home/guopeiwen/libtorch/lib/libkineto.a
+cuda_test: /usr/lib/x86_64-linux-gnu/libcuda.so
+cuda_test: /usr/local/cuda-12.4/lib64/libnvrtc.so
+cuda_test: /usr/local/cuda-12.4/lib64/libnvToolsExt.so
+cuda_test: /home/guopeiwen/libtorch/lib/libc10_cuda.so
+cuda_test: /home/guopeiwen/libtorch/lib/libc10_cuda.so
+cuda_test: /home/guopeiwen/libtorch/lib/libc10.so
+cuda_test: /usr/local/cuda-12.4/lib64/libcudart.so
+cuda_test: /usr/local/cuda-12.4/lib64/libnvToolsExt.so
 cuda_test: CMakeFiles/cuda_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/guopeiwen/code/cppProjects/CUDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CUDA executable cuda_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cuda_test.dir/link.txt --verbose=$(VERBOSE)

@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6"/>
 	<Project>
-		<Option title="GEMM"/>
+		<Option title="cuda"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
 		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\libtorch\;CMake Files\..\..\..\libtorch\share\;CMake Files\..\..\..\libtorch\share\cmake\;CMake Files\..\..\..\libtorch\share\cmake\Torch\;CMake Files\..\..\..\libtorch\share\cmake\Caffe2\;CMake Files\..\..\..\libtorch\share\cmake\Caffe2\public\;CMake Files\..\..\..\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\;CMake Files\..\..\..\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\;CMake Files\..\..\..\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindCUDA\;CMake Files\build\;"/>

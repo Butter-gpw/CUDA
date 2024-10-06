@@ -3,14 +3,14 @@
 #include <sys/time.h>
 #include "gemm.cuh"
 #include "utils.cuh"
-#include "reduce.cuh"
-#include "sgemv.cuh"
-#include "dot_product.cuh"
+#include "activate.cuh"
+#include "softmax.cuh"
+#include "norm.cuh"
 #define FLOAT4(value) (reinterpret_cast<float4*>(&(value))[0])
 
 
 int main(void){
-    setGPU(1);
+    setGPU(2);
     float *input, *output,*host;
     int n=1024;
     host = (float*)malloc(n * sizeof(float));
