@@ -103,6 +103,9 @@
 		<Unit filename="/home/guopeiwen/code/cppProjects/CUDA/main.cu">
 			<Option target="cuda_test"/>
 		</Unit>
+		<Unit filename="/home/guopeiwen/code/cppProjects/CUDA/reduce/block_all_reduce.cu">
+			<Option target="cuda_test"/>
+		</Unit>
 		<Unit filename="/home/guopeiwen/code/cppProjects/CUDA/src/elementwise.cu">
 			<Option target="cuda_test"/>
 		</Unit>

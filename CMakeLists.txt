@@ -25,6 +25,7 @@ cuda_include_directories(include)
 aux_source_directory(./src SRC_FILES)
 
 
-add_executable(cuda_test main.cu ${SRC_FILES})
+add_executable(cuda_test main.cu reduce/block_all_reduce.cu ${SRC_FILES})
+#add_executable(cuda_test main.cu ${SRC_FILES})
 target_include_directories(cuda_test PRIVATE ${CUDA_INCLUDE_DIRS} include)
 target_link_libraries(cuda_test PRIVATE ${CUDA_LIBRARIES} ${TORCH_LIBRARIES})

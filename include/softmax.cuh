@@ -36,7 +36,7 @@ __global__ void softmax_v2(float *x, float *y, float* total, int N){
     if(idx < N) y[idx] = exp_val / (*total);
 }
 
-template<const int NUM_THREADS=128>
+template<const int NUM_THREADS=128/4>
 __global__ void softmax_v2_vec4(float *x, float *y, float* total, int N){
     const int tid = threadIdx.x;
     const int idx = 4 * (blockIdx.x* blockDim.x + tid);
@@ -49,7 +49,7 @@ __global__ void softmax_v2_vec4(float *x, float *y, float* total, int N){
     exp_val.w = (idx < N) ? expf(reg_a.w) : 0.0f;
 
     float sum = exp_val.x + exp_val.y + exp_val.z + exp_val.w;
-    sum = block_reduce_sum<WARP_SIZE>(sum);
+    sum = block_reduce_sum<NUM_THREADS>(sum);
     if(tid==0) atomicAdd(total, sum);
     __threadfence();
     if(idx <N){

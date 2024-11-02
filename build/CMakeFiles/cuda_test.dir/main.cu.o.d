@@ -295,12 +295,9 @@ CMakeFiles/cuda_test.dir/main.cu.o : /home/guopeiwen/code/cppProjects/CUDA/main.
     /usr/include/c++/11/bits/ostream.tcc \
     /usr/include/c++/11/istream \
     /usr/include/c++/11/bits/istream.tcc \
+    /home/guopeiwen/code/cppProjects/CUDA/include/utils.cuh \
     /usr/include/x86_64-linux-gnu/sys/time.h \
     /home/guopeiwen/code/cppProjects/CUDA/include/gemm.cuh \
-    /home/guopeiwen/code/cppProjects/CUDA/include/utils.cuh \
-    /home/guopeiwen/code/cppProjects/CUDA/include/activate.cuh \
-    /home/guopeiwen/code/cppProjects/CUDA/include/softmax.cuh \
     /home/guopeiwen/code/cppProjects/CUDA/include/reduce.cuh \
     /usr/include/c++/11/cfloat \
-    /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
-    /home/guopeiwen/code/cppProjects/CUDA/include/norm.cuh
+    /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h

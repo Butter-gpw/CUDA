@@ -83,10 +83,24 @@ CMakeFiles/cuda_test.dir/main.cu.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/cuda_test.dir/main.cu.s"
 	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
 
+CMakeFiles/cuda_test.dir/reduce/block_all_reduce.cu.o: CMakeFiles/cuda_test.dir/flags.make
+CMakeFiles/cuda_test.dir/reduce/block_all_reduce.cu.o: ../reduce/block_all_reduce.cu
+CMakeFiles/cuda_test.dir/reduce/block_all_reduce.cu.o: CMakeFiles/cuda_test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guopeiwen/code/cppProjects/CUDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CUDA object CMakeFiles/cuda_test.dir/reduce/block_all_reduce.cu.o"
+	/usr/local/cuda-12.4/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/cuda_test.dir/reduce/block_all_reduce.cu.o -MF CMakeFiles/cuda_test.dir/reduce/block_all_reduce.cu.o.d -x cu -c /home/guopeiwen/code/cppProjects/CUDA/reduce/block_all_reduce.cu -o CMakeFiles/cuda_test.dir/reduce/block_all_reduce.cu.o
+
+CMakeFiles/cuda_test.dir/reduce/block_all_reduce.cu.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CUDA source to CMakeFiles/cuda_test.dir/reduce/block_all_reduce.cu.i"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_PREPROCESSED_SOURCE
+
+CMakeFiles/cuda_test.dir/reduce/block_all_reduce.cu.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CUDA source to assembly CMakeFiles/cuda_test.dir/reduce/block_all_reduce.cu.s"
+	$(CMAKE_COMMAND) -E cmake_unimplemented_variable CMAKE_CUDA_CREATE_ASSEMBLY_SOURCE
+
 CMakeFiles/cuda_test.dir/src/elementwise.cu.o: CMakeFiles/cuda_test.dir/flags.make
 CMakeFiles/cuda_test.dir/src/elementwise.cu.o: ../src/elementwise.cu
 CMakeFiles/cuda_test.dir/src/elementwise.cu.o: CMakeFiles/cuda_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guopeiwen/code/cppProjects/CUDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CUDA object CMakeFiles/cuda_test.dir/src/elementwise.cu.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guopeiwen/code/cppProjects/CUDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CUDA object CMakeFiles/cuda_test.dir/src/elementwise.cu.o"
 	/usr/local/cuda-12.4/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/cuda_test.dir/src/elementwise.cu.o -MF CMakeFiles/cuda_test.dir/src/elementwise.cu.o.d -x cu -c /home/guopeiwen/code/cppProjects/CUDA/src/elementwise.cu -o CMakeFiles/cuda_test.dir/src/elementwise.cu.o
 
 CMakeFiles/cuda_test.dir/src/elementwise.cu.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/cuda_test.dir/src/elementwise.cu.s: cmake_force
 CMakeFiles/cuda_test.dir/src/gemm.cu.o: CMakeFiles/cuda_test.dir/flags.make
 CMakeFiles/cuda_test.dir/src/gemm.cu.o: ../src/gemm.cu
 CMakeFiles/cuda_test.dir/src/gemm.cu.o: CMakeFiles/cuda_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guopeiwen/code/cppProjects/CUDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CUDA object CMakeFiles/cuda_test.dir/src/gemm.cu.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guopeiwen/code/cppProjects/CUDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CUDA object CMakeFiles/cuda_test.dir/src/gemm.cu.o"
 	/usr/local/cuda-12.4/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/cuda_test.dir/src/gemm.cu.o -MF CMakeFiles/cuda_test.dir/src/gemm.cu.o.d -x cu -c /home/guopeiwen/code/cppProjects/CUDA/src/gemm.cu -o CMakeFiles/cuda_test.dir/src/gemm.cu.o
 
 CMakeFiles/cuda_test.dir/src/gemm.cu.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/cuda_test.dir/src/gemm.cu.s: cmake_force
 CMakeFiles/cuda_test.dir/src/reduce.cu.o: CMakeFiles/cuda_test.dir/flags.make
 CMakeFiles/cuda_test.dir/src/reduce.cu.o: ../src/reduce.cu
 CMakeFiles/cuda_test.dir/src/reduce.cu.o: CMakeFiles/cuda_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guopeiwen/code/cppProjects/CUDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CUDA object CMakeFiles/cuda_test.dir/src/reduce.cu.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/guopeiwen/code/cppProjects/CUDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CUDA object CMakeFiles/cuda_test.dir/src/reduce.cu.o"
 	/usr/local/cuda-12.4/bin/nvcc -forward-unknown-to-host-compiler $(CUDA_DEFINES) $(CUDA_INCLUDES) $(CUDA_FLAGS) -MD -MT CMakeFiles/cuda_test.dir/src/reduce.cu.o -MF CMakeFiles/cuda_test.dir/src/reduce.cu.o.d -x cu -c /home/guopeiwen/code/cppProjects/CUDA/src/reduce.cu -o CMakeFiles/cuda_test.dir/src/reduce.cu.o
 
 CMakeFiles/cuda_test.dir/src/reduce.cu.i: cmake_force
@@ -128,6 +142,7 @@ CMakeFiles/cuda_test.dir/src/reduce.cu.s: cmake_force
 # Object files for target cuda_test
 cuda_test_OBJECTS = \
 "CMakeFiles/cuda_test.dir/main.cu.o" \
+"CMakeFiles/cuda_test.dir/reduce/block_all_reduce.cu.o" \
 "CMakeFiles/cuda_test.dir/src/elementwise.cu.o" \
 "CMakeFiles/cuda_test.dir/src/gemm.cu.o" \
 "CMakeFiles/cuda_test.dir/src/reduce.cu.o"
@@ -136,6 +151,7 @@ cuda_test_OBJECTS = \
 cuda_test_EXTERNAL_OBJECTS =
 
 cuda_test: CMakeFiles/cuda_test.dir/main.cu.o
+cuda_test: CMakeFiles/cuda_test.dir/reduce/block_all_reduce.cu.o
 cuda_test: CMakeFiles/cuda_test.dir/src/elementwise.cu.o
 cuda_test: CMakeFiles/cuda_test.dir/src/gemm.cu.o
 cuda_test: CMakeFiles/cuda_test.dir/src/reduce.cu.o
@@ -160,7 +176,7 @@ cuda_test: /home/guopeiwen/libtorch/lib/libc10.so
 cuda_test: /usr/local/cuda-12.4/lib64/libcudart.so
 cuda_test: /usr/local/cuda-12.4/lib64/libnvToolsExt.so
 cuda_test: CMakeFiles/cuda_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/guopeiwen/code/cppProjects/CUDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CUDA executable cuda_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/guopeiwen/code/cppProjects/CUDA/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CUDA executable cuda_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cuda_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

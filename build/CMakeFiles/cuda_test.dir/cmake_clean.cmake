@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/cuda_test.dir/main.cu.o"
   "CMakeFiles/cuda_test.dir/main.cu.o.d"
+  "CMakeFiles/cuda_test.dir/reduce/block_all_reduce.cu.o"
+  "CMakeFiles/cuda_test.dir/reduce/block_all_reduce.cu.o.d"
   "CMakeFiles/cuda_test.dir/src/elementwise.cu.o"
   "CMakeFiles/cuda_test.dir/src/elementwise.cu.o.d"
   "CMakeFiles/cuda_test.dir/src/gemm.cu.o"

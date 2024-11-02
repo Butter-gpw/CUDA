@@ -153,6 +153,30 @@ main.cu.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_test.dir/build.make CMakeFiles/cuda_test.dir/main.cu.s
 .PHONY : main.cu.s
 
+reduce/block_all_reduce.o: reduce/block_all_reduce.cu.o
+.PHONY : reduce/block_all_reduce.o
+
+# target to build an object file
+reduce/block_all_reduce.cu.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_test.dir/build.make CMakeFiles/cuda_test.dir/reduce/block_all_reduce.cu.o
+.PHONY : reduce/block_all_reduce.cu.o
+
+reduce/block_all_reduce.i: reduce/block_all_reduce.cu.i
+.PHONY : reduce/block_all_reduce.i
+
+# target to preprocess a source file
+reduce/block_all_reduce.cu.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_test.dir/build.make CMakeFiles/cuda_test.dir/reduce/block_all_reduce.cu.i
+.PHONY : reduce/block_all_reduce.cu.i
+
+reduce/block_all_reduce.s: reduce/block_all_reduce.cu.s
+.PHONY : reduce/block_all_reduce.s
+
+# target to generate assembly for a file
+reduce/block_all_reduce.cu.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cuda_test.dir/build.make CMakeFiles/cuda_test.dir/reduce/block_all_reduce.cu.s
+.PHONY : reduce/block_all_reduce.cu.s
+
 src/elementwise.o: src/elementwise.cu.o
 .PHONY : src/elementwise.o
 
@@ -237,6 +261,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... reduce/block_all_reduce.o"
+	@echo "... reduce/block_all_reduce.i"
+	@echo "... reduce/block_all_reduce.s"
 	@echo "... src/elementwise.o"
 	@echo "... src/elementwise.i"
 	@echo "... src/elementwise.s"

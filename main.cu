@@ -1,13 +1,7 @@
 #include <cstdio>
 #include <iostream>
-#include <sys/time.h>
-#include "gemm.cuh"
 #include "utils.cuh"
-#include "activate.cuh"
-#include "softmax.cuh"
-#include "norm.cuh"
-#define FLOAT4(value) (reinterpret_cast<float4*>(&(value))[0])
-
+#include "reduce.cuh"
 
 int main(void){
     setGPU(2);
